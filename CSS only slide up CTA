@@ -15,6 +15,7 @@ CSS Slide up CTA
   .css-slide-up-cta .one-block {
     width:100%;
     margin:0 0 1.6%;
+    background: grey;
   }
 
   .css-slide-up-cta .one-block img {
@@ -31,6 +32,7 @@ CSS Slide up CTA
     width:49%;
     margin: 0 1.4% 0 0;
     float:left;
+    background: grey;
   }
 
   .css-slide-up-cta .left-block img {
@@ -43,6 +45,7 @@ CSS Slide up CTA
     width:49%;
     margin:0;
     float:right;
+    background: grey;
   }
 
   .css-slide-up-cta .right-block img {
@@ -94,7 +97,7 @@ CSS Slide up CTA
     position: relative;
     overflow: hidden;
     width:100%;
-    max-width:1140px;
+    /*max-width:1140px;*/
     margin: auto;
   }
 
@@ -106,6 +109,7 @@ CSS Slide up CTA
     text-align: center;
     padding: 10px 20px;
     opacity: 0;
+    z-index:3;
     -webkit-transition: all 0.6s ease;
     -moz-transition:    all 0.6s ease;
     -o-transition:      all 0.6s ease;
@@ -279,7 +283,13 @@ CSS Slide up CTA
     }
 
     .css-slide-up-cta .cap-bot:hover .figcaption { 
-      height:80%; 
+      height:100px; 
+      padding: 5%; 
+      clear:both;
+    }
+
+    .css-slide-up-cta .one-block .cap-bot:hover .figcaption { 
+      height:120px; 
       padding: 5%; 
       clear:both;
     }
@@ -299,7 +309,7 @@ ROW 1 - 2 half width blocks
           <div class="title"> TITLE</div>
           <img src="IMG" alt="">
           <div class="figcaption">
-            <!--<div class="text">We are tipped</div>-->
+            <div class="text">We are tipped</div>
             <a href="LINK">
               <div class="cta">CTA 1</div>
             </a>
@@ -324,7 +334,7 @@ ROW 1 - 2 half width blocks
         <div class="title">TITLE</div>
         <img src="IMG" alt="">
           <div class="figcaption">
-            <!--<div class="text">We are tipped</div>-->
+            <div class="text">We are tipped</div>
             <a href="LINK">
               <div class="cta">CTA 1</div>
             </a>
@@ -354,7 +364,7 @@ ROW 2 - Full width block
         <div class="title">TITLE</div>
         <img src="IMG" alt="">
           <div class="figcaption">
-            <!--<div class="text">We are tipped</div>-->
+            <div class="text">We are tipped</div>
             <a href="LINK">
               <div class="cta">CTA 1</div>
             </a>
@@ -375,7 +385,7 @@ ROW 2 - Full width block
 
 
 <!-------------------
-ROW 3+4 - 2 small and 2 big floating
+ROW 3+4 - 2 small and 2 big floating (either block 1 & 4 need to be small or alrenatively 2 & 3 to work correctly) 
 -------------------->   
 
   <div class="floats">
@@ -385,7 +395,7 @@ ROW 3+4 - 2 small and 2 big floating
           <div class="title">TITLE</div>
           <img src="IMG" alt="">
           <div class="figcaption">
-            <!--<div class="text">We are tipped</div>-->
+            <div class="text">We are tipped</div>
             <a href="LINK">
               <div class="cta">CTA 1</div>
             </a>
@@ -410,7 +420,7 @@ ROW 3+4 - 2 small and 2 big floating
         <div class="title">TITLE</div>
         <img src="IMG" alt="">
           <div class="figcaption">
-            <!--<div class="text">We are tipped</div>-->
+            <div class="text">We are tipped</div>
             <a href="LINK">
               <div class="cta">CTA 1</div>
             </a>
@@ -436,7 +446,7 @@ ROW 3+4 - 2 small and 2 big floating
         <div class="title">TITLE</div>
         <img src="IMG" alt="">
           <div class="figcaption">
-            <!--<div class="text">We are tipped</div>-->
+            <div class="text">We are tipped</div>
             <a href="LINK">
               <div class="cta">CTA 1</div>
             </a>
@@ -460,7 +470,7 @@ ROW 3+4 - 2 small and 2 big floating
       <a href="LINK">
         <div class="cap-bot">
           <!--<div class="title">TITLE</div>-->
-          <img src="IMG">
+          <img src="IMG" alt="">
         <div class="figcaption">
           <div class="text">Swoosh</div>
           <a href="LINK" class="wrapper">
@@ -470,16 +480,16 @@ ROW 3+4 - 2 small and 2 big floating
             <div class="cta auto-width">CTA 2</div>
           </a>
           <a href="LINK" class="wrapper">
-            <div class="cta auto-width">8</div>
+            <div class="cta auto-width">CTA 3</div>
           </a>
           <a href="LINK" class="wrapper">
-            <div class="cta auto-width">9</div>
+            <div class="cta auto-width">CTA 4</div>
           </a>
           <a href="LINK" class="wrapper">
-            <div class="cta auto-width">10</div>
+            <div class="cta auto-width">CTA 5</div>
           </a>
           <a href="LINK" class="wrapper">
-            <div class="cta auto-width">11</div>
+            <div class="cta auto-width">CTA 6</div>
           </a>
           </div>
         </div>
