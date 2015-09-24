@@ -1,0 +1,490 @@
+<style type="text/css">
+/*==============================================================================
+Main Content Spots Jul 2015 -
+==============================================================================*/
+
+/* Wrap */
+  .css-slide-up-cta {
+    width:100%;
+    /*max-width:1140px;
+    min-width:660px;*/
+    margin:auto;
+  }
+
+/* Blocks */
+  .css-slide-up-cta .one-block {
+    width:100%;
+    margin:0 0 1.6%;
+  }
+
+  .css-slide-up-cta .one-block img {
+    width:100%;
+    margin:0;
+  }
+
+  .css-slide-up-cta .two-block {
+    width:100%;
+    margin:0 0 1.2% 0;
+  }
+
+  .css-slide-up-cta .left-block {
+    width:49%;
+    margin: 0 1.4% 0 0;
+    float:left;
+  }
+
+  .css-slide-up-cta .left-block img {
+    width:100%;
+    margin:0;
+
+  }
+
+  .css-slide-up-cta .right-block {
+    width:49%;
+    margin:0;
+    float:right;
+  }
+
+  .css-slide-up-cta .right-block img {
+    width:100%;
+    margin:0;
+  }
+
+/* verticle unaligned floats */
+
+  .css-slide-up-cta .floats {
+    width:100%;
+    margin:0 0 1.2% 0;
+  }
+
+  .css-slide-up-cta .floats .left-block {
+    width:49%;
+    margin: 0 1.4% 1.8% 0;
+    float:left;
+  }
+
+  .css-slide-up-cta .floats .right-block {
+    width:49%;
+    margin:0 0 1.8% 0;
+    float:right;
+  }
+
+  @media (min-width:1022px) {
+    .css-slide-up-cta .left-block {
+      margin: 0 1.6% 0 0;
+    } 
+  }
+
+  @media (min-width:930px) {
+    .css-slide-up-cta .left-block {
+      margin: 0 1.5% 0 0;
+    } 
+  }
+
+  @media (max-width:690px) {
+    .css-slide-up-cta .left-block {
+      margin: 0 1.2% 0 0;
+    } 
+  }
+
+/* Hover over */
+
+  .css-slide-up-cta div {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width:100%;
+    max-width:1140px;
+    margin: auto;
+  }
+
+  .css-slide-up-cta .figcaption {
+    position: absolute;
+    background: black;
+    background: rgba(255,255,255,0.75);
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    opacity: 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -o-transition:      all 0.6s ease;
+  }
+
+  .css-slide-up-cta div:hover .figcaption {
+    opacity: 1;
+  }
+
+  .css-slide-up-cta div:before {
+    position: absolute;
+    font-weight: 800;
+    background: black;
+    background: rgba(255,255,255,0.75);
+    text-shadow: 0 0 5px white;
+    color: black;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius:    12px;
+    border-radius:         12px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    -moz-transition: all 0.6s ease;
+    opacity: 0.75;
+  }
+
+  .css-slide-up-cta div:hover:before {
+    opacity: 0;
+  }
+
+  .css-slide-up-cta .cap-bot:before { display:none; width:100%; text-align: center; margin:auto;}
+  .css-slide-up-cta .cap-bot .figcaption { left: 0; bottom: -30px;  width:91%; height:0%; padding:0 5%; clear:both;}
+  .css-slide-up-cta .cap-bot:hover .figcaption { bottom: 0; width:91%; height:120px; padding:20px 5%; clear:both;}
+
+  .css-slide-up-cta .cta {
+      margin:5px 1%;
+      padding:10px 2px;
+      width:130px;
+      font-weight: 100;
+      text-align: center;
+      background: white;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      display: inline-block;
+      text-decoration: none !important;
+    color:black;
+    font-size:14px;
+  }
+
+
+  .css-slide-up-cta .cta:hover {
+      background: black;
+      color:white;
+  }
+
+  .css-slide-up-cta .cta-inline {
+
+  }
+
+  .css-slide-up-cta a {
+      text-decoration: none;
+      margin:0 !important;
+      border:0 !important;
+      padding:0 !important;
+  }
+
+  .css-slide-up-cta .clear {
+      clear:both;
+  }
+
+  .css-slide-up-cta .title {
+      text-align: center;
+      top: 45%;
+      padding: 20px 0;
+      position: absolute;
+      color: white;
+      font-size: 48px;
+      font-family: 'Avenir', 'Avenir Next W01', sans-serif;
+      font-weight: 800;
+      z-index: 2;
+  }
+
+  .css-slide-up-cta .heading {
+    color:black;
+    font-family: 'Avenir', 'Avenir Next W01', sans-serif;
+    font-size:16px;
+    margin-top:-10px;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+
+  .css-slide-up-cta .text {
+    color:black;
+    font-family: 'Avenir', 'Avenir Next W01', sans-serif;
+    font-size:12px;
+    margin-top:-5px;
+    margin-bottom: 5px;
+  }
+
+  .css-slide-up-cta .auto-width {
+    width:auto !important;
+    min-width:30px;
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  @media (max-width:1200px) {
+    .css-slide-up-cta .cta {
+      font-size:11px;
+    }
+
+    .css-slide-up-cta .auto-width {
+      width:auto !important;
+      min-width: 30px !important;
+      padding-left:14px;
+      padding-right:14px;
+    }
+  }
+
+  @media (max-width:920px) {
+    .css-slide-up-cta .title {
+      font-size:34px;
+    }
+
+    .css-slide-up-cta .heading {
+      font-size: 12px
+    }
+
+    .css-slide-up-cta .text {
+      font-size:10px;
+    }
+    .css-slide-up-cta .cta {
+      font-size:10px;
+    }
+    
+  }
+
+  @media (max-width:768px) {
+    .css-slide-up-cta .auto-width {
+      width:auto !important;
+      min-width: 25px !important;
+      padding-left:8px;
+      padding-right:8px;
+    }
+
+    .css-slide-up-cta .cta {
+      font-size:10px;
+    }
+  }
+
+
+  @media (max-width:690px) {
+    .css-slide-up-cta .cta {
+      font-size:8px;
+      width: 44%;
+    }
+
+    .css-slide-up-cta .title {
+      font-size:30px;
+    }
+
+    .css-slide-up-cta .auto-width {
+      width:auto !important;
+      min-width:20px;
+      padding-left:10px;
+      padding-right:10px;
+    }
+
+    .css-slide-up-cta .cap-bot:hover .figcaption { 
+      height:80%; 
+      padding: 5%; 
+      clear:both;
+    }
+  }
+</style>
+
+<div class="css-slide-up-cta">
+
+  
+<!-------------------
+ROW 1 - 2 half width blocks
+-------------------->  
+  <div class="two-block">
+    <div class="left-block">
+      <a href="LINK">
+        <div class="cap-bot">
+          <div class="title"> TITLE</div>
+          <img src="IMG" alt="">
+          <div class="figcaption">
+            <!--<div class="text">We are tipped</div>-->
+            <a href="LINK">
+              <div class="cta">CTA 1</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 2</div>
+            </a>
+            <!-- LINE BREAK - Remove if not needed --><div class="clear"> </div>
+            <a href="LINK">
+              <div class="cta">CTA 3</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 4</div>
+            </a>
+          </div>
+        </div>
+      </a>  
+    </div>
+
+    <div class="right-block">
+      <a href="LINK">
+      <div class="cap-bot">
+        <div class="title">TITLE</div>
+        <img src="IMG" alt="">
+          <div class="figcaption">
+            <!--<div class="text">We are tipped</div>-->
+            <a href="LINK">
+              <div class="cta">CTA 1</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 2</div>
+            </a>
+            <!-- LINE BREAK - Remove if not needed --><div class="clear"> </div>
+            <a href="LINK">
+              <div class="cta">CTA 3</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 4</div>
+            </a>
+        </div>
+      </div>
+    </a>
+    </div>
+  </div>
+
+<!-------------------
+ROW 2 - Full width block
+--------------------> 
+
+  <div class="one-block">
+    <a href="LINK">
+      <div class="cap-bot">
+        <div class="title">TITLE</div>
+        <img src="IMG" alt="">
+          <div class="figcaption">
+            <!--<div class="text">We are tipped</div>-->
+            <a href="LINK">
+              <div class="cta">CTA 1</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 2</div>
+            </a>
+            <!-- LINE BREAK - Remove if not needed --><div class="clear"> </div>
+            <a href="LINK">
+              <div class="cta">CTA 3</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 4</div>
+            </a>
+        </div>
+      </div>
+    </a>
+  </div> 
+
+
+<!-------------------
+ROW 3+4 - 2 small and 2 big floating
+-------------------->   
+
+  <div class="floats">
+    <div class="left-block">
+      <a href="LINK">
+        <div class="cap-bot">
+          <div class="title">TITLE</div>
+          <img src="IMG" alt="">
+          <div class="figcaption">
+            <!--<div class="text">We are tipped</div>-->
+            <a href="LINK">
+              <div class="cta">CTA 1</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 2</div>
+            </a>
+            <!-- LINE BREAK - Remove if not needed --><div class="clear"> </div>
+            <a href="LINK">
+              <div class="cta">CTA 3</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 4</div>
+            </a>          
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="right-block">
+      <a href="/clothing/jackets-and-coats/" class="wrapper ga-ip" data-ip-position="static banner 5" data-ip-name="Jackets">
+      <div class="cap-bot">
+        <div class="title">TITLE</div>
+        <img src="IMG" alt="">
+          <div class="figcaption">
+            <!--<div class="text">We are tipped</div>-->
+            <a href="LINK">
+              <div class="cta">CTA 1</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 2</div>
+            </a>
+            <!-- LINE BREAK - Remove if not needed --><div class="clear"> </div>
+            <a href="LINK">
+              <div class="cta">CTA 3</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 4</div>
+            </a>
+        </div>
+      </div>
+    </a>
+    </div>
+
+
+    <div class="left-block">
+      <a href="LINK">
+      <div class="cap-bot">
+        <div class="title">TITLE</div>
+        <img src="IMG" alt="">
+          <div class="figcaption">
+            <!--<div class="text">We are tipped</div>-->
+            <a href="LINK">
+              <div class="cta">CTA 1</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 2</div>
+            </a>
+            <!-- LINE BREAK - Remove if not needed --><div class="clear"> </div>
+            <a href="LINK">
+              <div class="cta">CTA 3</div>
+            </a>
+            <a href="LINK">
+              <div class="cta">CTA 4</div>
+            </a>
+        </div>
+      </div>
+    </a>
+    </div>
+
+
+    <div class="right-block">
+      <a href="LINK">
+        <div class="cap-bot">
+          <!--<div class="title">TITLE</div>-->
+          <img src="IMG">
+        <div class="figcaption">
+          <div class="text">Swoosh</div>
+          <a href="LINK" class="wrapper">
+            <div class="cta auto-width">CTA 1</div>
+          </a>
+          <a href="LINK" class="wrapper">
+            <div class="cta auto-width">CTA 2</div>
+          </a>
+          <a href="LINK" class="wrapper">
+            <div class="cta auto-width">8</div>
+          </a>
+          <a href="LINK" class="wrapper">
+            <div class="cta auto-width">9</div>
+          </a>
+          <a href="LINK" class="wrapper">
+            <div class="cta auto-width">10</div>
+          </a>
+          <a href="LINK" class="wrapper">
+            <div class="cta auto-width">11</div>
+          </a>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>  
+</div>
