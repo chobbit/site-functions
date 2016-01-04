@@ -1,0 +1,54 @@
+<!-- JQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<style type="text/css">
+.active-link {
+    color:#21B9E6 !important; /* Selected/Active link color */
+}
+</style>
+
+
+
+<!-- put this link around your First Call to action -->
+<a class="links active-link" data-showdiv="ShowContent1">
+    <!-- Insert Call to action 1 here -->
+</a>
+
+<!-- put this link around your First Call to action -->
+<a class="links active-link" data-showdiv="ShowContent2">
+    <!-- Insert Call to action 1 here -->
+</a>
+
+
+
+
+
+<div id="ShowContent1" style="display:block;"><!-- display:block here makes this content show when the page loads -->
+    <!-- put all your first content inside this div -->
+</div>
+
+
+<div id="ShowContent2" style="display:none;"><!-- display:block here makes this content show when the page loads -->
+    <!-- put all your first content inside this div -->
+</div>
+
+
+
+
+<script type="text/javascript">
+/* Michael W's swap out divs script */
+$(window).load(function (){
+    $(".links").click(function () {
+        $(".links").removeClass( "active-link" );
+        $(this).addClass( "active-link" );
+        var $target = $("#" + $(this).data('showdiv'));
+        if ($target.is(':visible')) {
+            /* Next line to close on clicking link again, comment out if dont want to close */
+            /*$(".divs:visible").slideToggle();*/
+        } else {
+            $target.slideDown().siblings().slideUp();
+        }
+    });
+
+}); 
