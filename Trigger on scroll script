@@ -1,0 +1,18 @@
+/* This will fire the below changes when you scroll down 150px but when you scroll back up above 150px threshold it will fire the else 
+so make sure what ever is changed initially has an else alternative to return it to it's original state: */
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 150) {
+      $("#DIV").css("background","#FFF");
+      $( '#DIV .DIV' ).each(function () {
+            this.style.setProperty( 'width', '230px', 'important' );
+      });
+    } else {
+      $("#DIV").css("background","#000");
+      $( '#DIV .DIV' ).each(function () {
+            this.style.setProperty( 'width', '100%', 'important' );
+      });
+    }
+});
