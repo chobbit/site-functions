@@ -1,0 +1,49 @@
+//Add GA tagging to (none HTML) imagery
+
+$(document).ready(function() {
+  $('#bannersAll .banRow .gridLink a.banr').each(function(Index) {
+    $(this).addClass('ga-ip').attr({'data-ip-name' : 'row_'+Index+'_'+$('img', this).attr('title'), 'data-ip-position' : 'Homepage_Content' });
+  });
+});
+
+
+
+//Add GA tagging to Header Navigation
+
+$(document).ready(function() {
+   $('#nav-menu>li.level0>a').each(function(Index) {
+     $(this).addClass('ga-ip').attr({'data-ip-name' : Index+'_'+$(this).text(), 'data-ip-position' : 'Header_Navigation'});
+   });
+});
+
+
+
+//Add GA tagging to Burger Nav
+
+$(document).ready(function() {
+  $('#nav > ul.menu > li.level0').each(function(Index) {
+    $(this).children('a').addClass('ga-ip').attr({'data-ip-name' : Index+'_'+$(this).children('a').text(), 'data-ip-position' : 'Burger_Menu_Level0' });
+    var lvl0 = $(this).children('a').text();
+    $(this).find('li.level1').each(function(Index) {
+      $(this).children('a').addClass('ga-ip').attr({'data-ip-name' : lvl0+' > '+Index+'_'+$(this).children('a').text(), 'data-ip-position' : 'Burger_Menu_Level1' });
+      var lvl1 = $(this).children('a').text();
+      $(this).find('li.level2').each(function(Index) {
+        $(this).children('a').addClass('ga-ip').attr({'data-ip-name' : lvl0+' > '+lvl1+' > '+Index+'_'+$(this).children('a').text(), 'data-ip-position' : 'Burger_Menu_Level2' });
+        var lvl2 = $(this).children('a').text();
+        $(this).find('li.level3').each(function(Index) {
+          $(this).children('a').addClass('ga-ip').attr({'data-ip-name' : lvl0+' > '+lvl1+' > '+lvl2+Index+'_'+$(this).children('a').text(), 'data-ip-position' : 'Burger_Menu_Level3' });
+        });
+      });
+    });
+  });
+});
+
+
+
+//Add GA tagging to Trending Searches
+
+$(document).ready(function() {
+  $('#trendingSearches ul li a').each(function(index) {
+    $(this).addClass('ga-ip').attr({'data-ip-name' : index+'_'+$(this).text(), 'data-ip-position' : 'Trended Searches'});
+  });
+});
